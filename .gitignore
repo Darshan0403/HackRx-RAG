@@ -1,0 +1,22 @@
+# Cache directory for processed documents
+document_cache/
+
+# Python virtual environment
+venv/
+bajaj-env/
+venv_gpu/
+gpu_env/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables file (contains secrets)
+.env
+
+# IDE configuration files
+.vscode/
+.idea/
+
+qdrant_storage/
+temp_documents/

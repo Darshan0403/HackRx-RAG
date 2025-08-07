@@ -1,0 +1,571 @@
+2025-08-06 23:00:16,048 - INFO - --- Server Shutting Down ---
+2025-08-06 23:00:33,439 - INFO - --- Using device for models: CUDA ---
+2025-08-06 23:00:33,440 - INFO - --- Embedding Model: BAAI/bge-large-en-v1.5 ---
+2025-08-06 23:00:33,440 - INFO - --- Reranker Model: colbert-ir/colbertv2.0 ---
+2025-08-06 23:00:33,442 - INFO - --- RAG Server Starting Up ---
+2025-08-06 23:00:33,948 - INFO - Loading embedding model: BAAI/bge-large-en-v1.5...
+2025-08-06 23:00:38,924 - INFO - Loading ColBERT reranker model: colbert-ir/colbertv2.0...
+2025-08-06 23:00:41,414 - INFO - --- RAG System Ready ---
+2025-08-06 23:04:12,997 - INFO - Cache MISS for document hash: 5b84b4bdff567059a4772a2e73eca1c9c3ea725bb490987440df77749de7cfab
+2025-08-06 23:04:13,000 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D
+2025-08-06 23:04:13,529 - INFO - Extracting text from '5b84b4bdff567059a4772a2e73eca1c9c3ea725bb490987440df77749de7cfab.tmp' with extension: .pdf
+2025-08-06 23:04:13,618 - INFO - Created 180 document chunks from all processed files.
+2025-08-06 23:04:13,618 - INFO - Setting up indexes for 180 document chunks...
+2025-08-06 23:04:13,645 - INFO - Creating new Qdrant collection: 'doc_5b84b4bdff56' with vector size 1024
+2025-08-06 23:04:13,796 - INFO - Creating embeddings...
+2025-08-06 23:04:16,682 - INFO - Indexed 180 vectors in Qdrant collection: doc_5b84b4bdff56
+2025-08-06 23:04:16,683 - INFO - Building BM25 index...
+2025-08-06 23:04:16,692 - INFO - BM25 indexing complete.
+2025-08-06 23:04:16,693 - INFO - Document processing completed in 3.17 seconds.
+2025-08-06 23:04:16,745 - INFO - Document 5b84b4bdff567059a4772a2e73eca1c9c3ea725bb490987440df77749de7cfab processed and cached successfully.
+2025-08-06 23:04:16,748 - INFO - Processing 4 questions in parallel...
+2025-08-06 23:04:16,801 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:17,506 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:17,617 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:17,721 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:22,348 - INFO - All questions processed.
+2025-08-06 23:04:22,348 - INFO - Request completed. Total time: 9.36s, Avg time/q: 2.34s
+2025-08-06 23:04:28,031 - INFO - Cache HIT for document hash: 5b84b4bdff567059a4772a2e73eca1c9c3ea725bb490987440df77749de7cfab
+2025-08-06 23:04:28,037 - INFO - Collection 'doc_5b84b4bdff56' already exists. Verifying vector size.
+2025-08-06 23:04:28,059 - INFO - Processing 1 questions in parallel...
+2025-08-06 23:04:28,117 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:30,273 - INFO - All questions processed.
+2025-08-06 23:04:30,273 - INFO - Request completed. Total time: 2.24s, Avg time/q: 2.24s
+2025-08-06 23:04:32,781 - INFO - Cache MISS for document hash: f46ed20ce48713f9158a0a0b780e42a2564a81a32da45422574461b2378b5d03
+2025-08-06 23:04:32,783 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Super_Splendor_(Feb_2023).pdf?sv=2023-01-03&st=2025-07-21T08%3A10%3A00Z&se=2025-09-22T08%3A10%3A00Z&sr=b&sp=r&sig=vhHrl63YtrEOCsAy%2BpVKr20b3ZUo5HMz1lF9%2BJh6LQ0%3D
+2025-08-06 23:04:37,034 - INFO - Extracting text from 'f46ed20ce48713f9158a0a0b780e42a2564a81a32da45422574461b2378b5d03.tmp' with extension: .pdf
+2025-08-06 23:04:37,355 - INFO - Created 288 document chunks from all processed files.
+2025-08-06 23:04:37,355 - INFO - Setting up indexes for 288 document chunks...
+2025-08-06 23:04:37,362 - INFO - Creating new Qdrant collection: 'doc_f46ed20ce487' with vector size 1024
+2025-08-06 23:04:37,475 - INFO - Creating embeddings...
+2025-08-06 23:04:42,793 - INFO - Indexed 288 vectors in Qdrant collection: doc_f46ed20ce487
+2025-08-06 23:04:42,793 - INFO - Building BM25 index...
+2025-08-06 23:04:42,811 - INFO - BM25 indexing complete.
+2025-08-06 23:04:42,814 - INFO - Document processing completed in 5.79 seconds.
+2025-08-06 23:04:42,887 - INFO - Document f46ed20ce48713f9158a0a0b780e42a2564a81a32da45422574461b2378b5d03 processed and cached successfully.
+2025-08-06 23:04:42,894 - INFO - Processing 5 questions in parallel...
+2025-08-06 23:04:42,942 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:43,039 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:43,160 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:43,255 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:43,360 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:48,233 - INFO - All questions processed.
+2025-08-06 23:04:48,233 - INFO - Request completed. Total time: 15.45s, Avg time/q: 3.09s
+2025-08-06 23:04:55,233 - INFO - Cache MISS for document hash: 10ddcf6c55ad70b6707dee09e0a860ed671de72890795ddee394f46a0bc6f8a9
+2025-08-06 23:04:55,236 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Family%20Medicare%20Policy%20(UIN-%20UIIHLIP22070V042122)%201.pdf?sv=2023-01-03&st=2025-07-22T10%3A17%3A39Z&se=2025-08-23T10%3A17%3A00Z&sr=b&sp=r&sig=dA7BEMIZg3WcePcckBOb4QjfxK%2B4rIfxBs2%2F%2BNwoPjQ%3D
+2025-08-06 23:04:55,794 - INFO - Extracting text from '10ddcf6c55ad70b6707dee09e0a860ed671de72890795ddee394f46a0bc6f8a9.tmp' with extension: .pdf
+2025-08-06 23:04:55,926 - INFO - Created 244 document chunks from all processed files.
+2025-08-06 23:04:55,926 - INFO - Setting up indexes for 244 document chunks...
+2025-08-06 23:04:55,934 - INFO - Creating new Qdrant collection: 'doc_10ddcf6c55ad' with vector size 1024
+2025-08-06 23:04:56,078 - INFO - Creating embeddings...
+2025-08-06 23:04:59,749 - INFO - Indexed 244 vectors in Qdrant collection: doc_10ddcf6c55ad
+2025-08-06 23:04:59,749 - INFO - Building BM25 index...
+2025-08-06 23:04:59,761 - INFO - BM25 indexing complete.
+2025-08-06 23:04:59,764 - INFO - Document processing completed in 3.97 seconds.
+2025-08-06 23:04:59,819 - INFO - Document 10ddcf6c55ad70b6707dee09e0a860ed671de72890795ddee394f46a0bc6f8a9 processed and cached successfully.
+2025-08-06 23:04:59,822 - INFO - Processing 3 questions in parallel...
+2025-08-06 23:04:59,865 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:04:59,963 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:05:00,122 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:05:01,620 - INFO - All questions processed.
+2025-08-06 23:05:01,620 - INFO - Request completed. Total time: 6.39s, Avg time/q: 2.13s
+2025-08-06 23:05:07,959 - INFO - Cache MISS for document hash: 74f6637983aab10971ca6c5e31f67e80f156d4a8d79b1bf80bc8f65766b42338
+2025-08-06 23:05:07,961 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D
+2025-08-06 23:05:08,755 - INFO - Extracting text from '74f6637983aab10971ca6c5e31f67e80f156d4a8d79b1bf80bc8f65766b42338.tmp' with extension: .pdf
+2025-08-06 23:05:09,722 - INFO - Created 2144 document chunks from all processed files.
+2025-08-06 23:05:09,722 - INFO - Setting up indexes for 2144 document chunks...
+2025-08-06 23:05:09,730 - INFO - Creating new Qdrant collection: 'doc_74f6637983aa' with vector size 1024
+2025-08-06 23:05:09,825 - INFO - Creating embeddings...
+2025-08-06 23:05:54,782 - INFO - Indexed 2144 vectors in Qdrant collection: doc_74f6637983aa
+2025-08-06 23:05:54,783 - INFO - Building BM25 index...
+2025-08-06 23:05:54,896 - INFO - BM25 indexing complete.
+2025-08-06 23:05:54,922 - INFO - Document processing completed in 46.17 seconds.
+2025-08-06 23:05:55,015 - INFO - Cache MISS for document hash: 886d1bc4d09a65b381281ffd3abbf9194d09b90de9c4f6aeec1ddd130b567a0e
+2025-08-06 23:05:55,017 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/principia_newton.pdf?sv=2023-01-03&st=2025-07-28T07%3A20%3A32Z&se=2026-07-29T07%3A20%3A00Z&sr=b&sp=r&sig=V5I1QYyigoxeUMbnUKsdEaST99F5%2FDfo7wpKg9XXF5w%3D
+2025-08-06 23:06:04,853 - INFO - Extracting text from '886d1bc4d09a65b381281ffd3abbf9194d09b90de9c4f6aeec1ddd130b567a0e.tmp' with extension: .pdf
+2025-08-06 23:06:05,998 - INFO - Created 4579 document chunks from all processed files.
+2025-08-06 23:06:05,998 - INFO - Setting up indexes for 4579 document chunks...
+2025-08-06 23:06:06,005 - INFO - Creating new Qdrant collection: 'doc_886d1bc4d09a' with vector size 1024
+2025-08-06 23:06:06,107 - INFO - Creating embeddings...
+2025-08-06 23:07:17,948 - INFO - Indexed 4579 vectors in Qdrant collection: doc_886d1bc4d09a
+2025-08-06 23:07:17,948 - INFO - Building BM25 index...
+2025-08-06 23:07:18,143 - INFO - BM25 indexing complete.
+2025-08-06 23:07:18,199 - INFO - Document processing completed in 73.39 seconds.
+2025-08-06 23:07:18,369 - INFO - Document 74f6637983aab10971ca6c5e31f67e80f156d4a8d79b1bf80bc8f65766b42338 processed and cached successfully.
+2025-08-06 23:07:18,376 - INFO - Processing 10 questions in parallel...
+2025-08-06 23:07:18,430 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:18,550 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:18,658 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:18,780 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:18,893 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,015 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,131 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,246 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,403 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,525 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,602 - INFO - Document 886d1bc4d09a65b381281ffd3abbf9194d09b90de9c4f6aeec1ddd130b567a0e processed and cached successfully.
+2025-08-06 23:07:19,616 - INFO - Cache MISS for document hash: acff2550cd7e44d884f38fc710365b5748f498cd73d19f1766dea0fde52fe10b
+2025-08-06 23:07:19,625 - INFO - Processing 12 questions in parallel...
+2025-08-06 23:07:19,740 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,864 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:19,977 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,096 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,244 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,367 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,496 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,618 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,743 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,849 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:20,964 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:21,103 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:21,169 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/UNI%20GROUP%20HEALTH%20INSURANCE%20POLICY%20-%20UIIHLGP26043V022526%201.pdf?sv=2023-01-03&spr=https&st=2025-07-31T17%3A06%3A03Z&se=2026-08-01T17%3A06%3A00Z&sr=b&sp=r&sig=wLlooaThgRx91i2z4WaeggT0qnuUUEzIUKj42GsvMfg%3D
+2025-08-06 23:07:22,317 - INFO - Extracting text from 'acff2550cd7e44d884f38fc710365b5748f498cd73d19f1766dea0fde52fe10b.tmp' with extension: .pdf
+2025-08-06 23:07:22,591 - INFO - Created 389 document chunks from all processed files.
+2025-08-06 23:07:22,591 - INFO - Setting up indexes for 389 document chunks...
+2025-08-06 23:07:22,597 - INFO - Creating new Qdrant collection: 'doc_acff2550cd7e' with vector size 1024
+2025-08-06 23:07:22,715 - INFO - Creating embeddings...
+2025-08-06 23:07:29,990 - INFO - Indexed 389 vectors in Qdrant collection: doc_acff2550cd7e
+2025-08-06 23:07:29,990 - INFO - Building BM25 index...
+2025-08-06 23:07:30,010 - INFO - BM25 indexing complete.
+2025-08-06 23:07:30,015 - INFO - Document processing completed in 7.70 seconds.
+2025-08-06 23:07:30,044 - INFO - Cache MISS for document hash: a27ea3b03e38258e023a6d7963f53233d1177f2487941118df5b64f6eb8334a8
+2025-08-06 23:07:30,047 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Happy%20Family%20Floater%20-%202024%20OICHLIP25046V062425%201.pdf?sv=2023-01-03&spr=https&st=2025-07-31T17%3A24%3A30Z&se=2026-08-01T17%3A24%3A00Z&sr=b&sp=r&sig=VNMTTQUjdXGYb2F4Di4P0zNvmM2rTBoEHr%2BnkUXIqpQ%3D
+2025-08-06 23:07:30,801 - INFO - Extracting text from 'a27ea3b03e38258e023a6d7963f53233d1177f2487941118df5b64f6eb8334a8.tmp' with extension: .pdf
+2025-08-06 23:07:31,100 - INFO - Created 334 document chunks from all processed files.
+2025-08-06 23:07:31,101 - INFO - Setting up indexes for 334 document chunks...
+2025-08-06 23:07:31,127 - INFO - Creating new Qdrant collection: 'doc_a27ea3b03e38' with vector size 1024
+2025-08-06 23:07:31,228 - INFO - Creating embeddings...
+2025-08-06 23:07:36,723 - INFO - Indexed 334 vectors in Qdrant collection: doc_a27ea3b03e38
+2025-08-06 23:07:36,724 - INFO - Building BM25 index...
+2025-08-06 23:07:36,743 - INFO - BM25 indexing complete.
+2025-08-06 23:07:36,747 - INFO - Document processing completed in 5.95 seconds.
+2025-08-06 23:07:36,807 - INFO - Document acff2550cd7e44d884f38fc710365b5748f498cd73d19f1766dea0fde52fe10b processed and cached successfully.
+2025-08-06 23:07:36,908 - INFO - Document a27ea3b03e38258e023a6d7963f53233d1177f2487941118df5b64f6eb8334a8 processed and cached successfully.
+2025-08-06 23:07:36,912 - INFO - Processing 36 questions in parallel...
+2025-08-06 23:07:36,982 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,110 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,220 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,353 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,457 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,568 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,666 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,785 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,889 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:37,997 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,106 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,254 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,357 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,456 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,579 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,685 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,812 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:38,937 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,061 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,170 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,262 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,391 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,516 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,624 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,728 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,839 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:39,962 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,072 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,220 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,337 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,437 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,543 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,651 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,760 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:40,947 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,048 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,109 - INFO - Processing 25 questions in parallel...
+2025-08-06 23:07:41,161 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,274 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,374 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,472 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,577 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,691 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,790 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:41,890 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,004 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,129 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,236 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,340 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,456 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,550 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,653 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,767 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:42,886 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,005 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,119 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,216 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,326 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,445 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,566 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,691 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:43,810 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:07:46,738 - INFO - All questions processed.
+2025-08-06 23:07:46,738 - INFO - Request completed. Total time: 28.36s, Avg time/q: 0.79s
+2025-08-06 23:07:48,508 - INFO - All questions processed.
+2025-08-06 23:07:48,509 - INFO - Request completed. Total time: 113.50s, Avg time/q: 9.46s
+2025-08-06 23:07:48,676 - INFO - All questions processed.
+2025-08-06 23:07:48,676 - INFO - Request completed. Total time: 18.64s, Avg time/q: 0.75s
+2025-08-06 23:07:49,376 - INFO - All questions processed.
+2025-08-06 23:07:49,376 - INFO - Request completed. Total time: 161.42s, Avg time/q: 16.14s
+2025-08-06 23:08:19,079 - INFO - Cache MISS for document hash: 54c362fa5cb33a8bf3ca490d32d36265388493c421ca4a51d6c7a585e487ad79
+2025-08-06 23:08:19,082 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/Test%20Case%20HackRx.pptx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A36%3A56Z&se=2026-08-05T18%3A36%3A00Z&sr=b&sp=r&sig=v3zSJ%2FKW4RhXaNNVTU9KQbX%2Bmo5dDEIzwaBzXCOicJM%3D
+2025-08-06 23:08:20,934 - INFO - Extracting text from '54c362fa5cb33a8bf3ca490d32d36265388493c421ca4a51d6c7a585e487ad79.tmp' with extension: .pptx
+2025-08-06 23:08:20,989 - INFO - Created 1 document chunks from all processed files.
+2025-08-06 23:08:20,989 - INFO - Setting up indexes for 1 document chunks...
+2025-08-06 23:08:21,019 - INFO - Creating new Qdrant collection: 'doc_54c362fa5cb3' with vector size 1024
+2025-08-06 23:08:21,143 - INFO - Creating embeddings...
+2025-08-06 23:08:21,207 - INFO - Indexed 1 vectors in Qdrant collection: doc_54c362fa5cb3
+2025-08-06 23:08:21,208 - INFO - Building BM25 index...
+2025-08-06 23:08:21,208 - INFO - BM25 indexing complete.
+2025-08-06 23:08:21,208 - INFO - Document processing completed in 0.28 seconds.
+2025-08-06 23:08:21,209 - INFO - Document 54c362fa5cb33a8bf3ca490d32d36265388493c421ca4a51d6c7a585e487ad79 processed and cached successfully.
+2025-08-06 23:08:21,212 - INFO - Processing 5 questions in parallel...
+2025-08-06 23:08:21,267 - INFO - Re-ranking 1 documents with ColBERT...
+2025-08-06 23:08:21,267 - ERROR - Error answering question 'What types of hospitalization expenses are covered...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:08:21,328 - INFO - Re-ranking 1 documents with ColBERT...
+2025-08-06 23:08:21,329 - ERROR - Error answering question 'What is domiciliary hospitalization, and what are ...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:08:21,389 - INFO - Re-ranking 1 documents with ColBERT...
+2025-08-06 23:08:21,389 - ERROR - Error answering question 'What are the benefits and limits of telemedicine a...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:08:21,429 - INFO - Re-ranking 1 documents with ColBERT...
+2025-08-06 23:08:21,429 - ERROR - Error answering question 'What specialized treatments are covered, and what ...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:08:21,470 - INFO - Re-ranking 1 documents with ColBERT...
+2025-08-06 23:08:21,471 - ERROR - Error answering question 'What are the waiting periods for pre-existing dise...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:08:21,471 - INFO - All questions processed.
+2025-08-06 23:08:21,472 - INFO - Request completed. Total time: 2.39s, Avg time/q: 0.48s
+2025-08-06 23:08:28,801 - INFO - Cache MISS for document hash: e229a5a174987e983b606bc78b8da83e6e45c484d99e3000fc69d375fd0fbf87
+2025-08-06 23:08:28,803 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/Mediclaim%20Insurance%20Policy.docx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A42%3A14Z&se=2026-08-05T18%3A42%3A00Z&sr=b&sp=r&sig=yvnP%2FlYfyyqYmNJ1DX51zNVdUq1zH9aNw4LfPFVe67o%3D
+2025-08-06 23:08:29,139 - INFO - Extracting text from 'e229a5a174987e983b606bc78b8da83e6e45c484d99e3000fc69d375fd0fbf87.tmp' with extension: .docx
+2025-08-06 23:08:29,160 - INFO - Created 207 document chunks from all processed files.
+2025-08-06 23:08:29,162 - INFO - Setting up indexes for 207 document chunks...
+2025-08-06 23:08:29,179 - INFO - Creating new Qdrant collection: 'doc_e229a5a17498' with vector size 1024
+2025-08-06 23:08:29,286 - INFO - Creating embeddings...
+2025-08-06 23:08:31,971 - INFO - Indexed 207 vectors in Qdrant collection: doc_e229a5a17498
+2025-08-06 23:08:31,971 - INFO - Building BM25 index...
+2025-08-06 23:08:31,979 - INFO - BM25 indexing complete.
+2025-08-06 23:08:31,981 - INFO - Document processing completed in 2.84 seconds.
+2025-08-06 23:08:31,989 - INFO - Document e229a5a174987e983b606bc78b8da83e6e45c484d99e3000fc69d375fd0fbf87 processed and cached successfully.
+2025-08-06 23:08:31,992 - INFO - Processing 5 questions in parallel...
+2025-08-06 23:08:32,048 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:32,172 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:32,269 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:32,389 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:32,498 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:35,389 - INFO - All questions processed.
+2025-08-06 23:08:35,390 - INFO - Request completed. Total time: 6.59s, Avg time/q: 1.32s
+2025-08-06 23:08:42,796 - INFO - Cache MISS for document hash: 5ca0bbf0ff6c9dc31a08bba90ea8ba884f5ba410af22f549b7d4a9bb49a9b675
+2025-08-06 23:08:42,798 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/Salary%20data.xlsx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A46%3A54Z&se=2026-08-05T18%3A46%3A00Z&sr=b&sp=r&sig=sSoLGNgznoeLpZv%2FEe%2FEI1erhD0OQVoNJFDPtqfSdJQ%3D
+2025-08-06 23:08:42,999 - INFO - Extracting text from '5ca0bbf0ff6c9dc31a08bba90ea8ba884f5ba410af22f549b7d4a9bb49a9b675.tmp' with extension: .xlsx
+2025-08-06 23:08:44,742 - INFO - Created 7 document chunks from all processed files.
+2025-08-06 23:08:44,742 - INFO - Setting up indexes for 7 document chunks...
+2025-08-06 23:08:44,748 - INFO - Creating new Qdrant collection: 'doc_5ca0bbf0ff6c' with vector size 1024
+2025-08-06 23:08:44,841 - INFO - Creating embeddings...
+2025-08-06 23:08:44,989 - INFO - Indexed 7 vectors in Qdrant collection: doc_5ca0bbf0ff6c
+2025-08-06 23:08:44,989 - INFO - Building BM25 index...
+2025-08-06 23:08:44,990 - INFO - BM25 indexing complete.
+2025-08-06 23:08:44,990 - INFO - Document processing completed in 1.99 seconds.
+2025-08-06 23:08:44,991 - INFO - Document 5ca0bbf0ff6c9dc31a08bba90ea8ba884f5ba410af22f549b7d4a9bb49a9b675 processed and cached successfully.
+2025-08-06 23:08:44,993 - ERROR - An unexpected error occurred during request processing: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_documents\\5ca0bbf0ff6c9dc31a08bba90ea8ba884f5ba410af22f549b7d4a9bb49a9b675.tmp'
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 423, in run_submission
+    rag_system = await get_or_create_enhanced_rag_system(doc_url=payload.documents)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 408, in get_or_create_enhanced_rag_system
+    os.remove(temp_single_file_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_documents\\5ca0bbf0ff6c9dc31a08bba90ea8ba884f5ba410af22f549b7d4a9bb49a9b675.tmp'
+2025-08-06 23:08:46,267 - INFO - Cache MISS for document hash: b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360
+2025-08-06 23:08:46,269 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/Pincode%20data.xlsx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A50%3A43Z&se=2026-08-05T18%3A50%3A00Z&sr=b&sp=r&sig=xf95kP3RtMtkirtUMFZn%2FFNai6sWHarZsTcvx8ka9mI%3D
+2025-08-06 23:08:46,559 - INFO - Extracting text from 'b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360.tmp' with extension: .xlsx
+2025-08-06 23:08:46,586 - INFO - Created 64 document chunks from all processed files.
+2025-08-06 23:08:46,586 - INFO - Setting up indexes for 64 document chunks...
+2025-08-06 23:08:46,614 - INFO - Creating new Qdrant collection: 'doc_b46b0889a1b8' with vector size 1024
+2025-08-06 23:08:46,719 - INFO - Creating embeddings...
+2025-08-06 23:08:47,059 - INFO - Indexed 64 vectors in Qdrant collection: doc_b46b0889a1b8
+2025-08-06 23:08:47,059 - INFO - Building BM25 index...
+2025-08-06 23:08:47,061 - INFO - BM25 indexing complete.
+2025-08-06 23:08:47,062 - INFO - Document processing completed in 0.50 seconds.
+2025-08-06 23:08:47,106 - INFO - Document b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360 processed and cached successfully.
+2025-08-06 23:08:47,109 - ERROR - An unexpected error occurred during request processing: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_documents\\b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360.tmp'
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 423, in run_submission
+    rag_system = await get_or_create_enhanced_rag_system(doc_url=payload.documents)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 408, in get_or_create_enhanced_rag_system
+    os.remove(temp_single_file_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_documents\\b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360.tmp'
+2025-08-06 23:08:48,388 - INFO - Cache HIT for document hash: b46b0889a1b8fda4ae9b1960bf3b40234bd504f36343bb25b6b04273a80c5360
+2025-08-06 23:08:48,405 - INFO - Collection 'doc_b46b0889a1b8' already exists. Verifying vector size.
+2025-08-06 23:08:48,411 - INFO - Processing 3 questions in parallel...
+2025-08-06 23:08:48,469 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:48,581 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:48,676 - INFO - Re-ranking 15 documents with ColBERT...
+2025-08-06 23:08:51,431 - INFO - All questions processed.
+2025-08-06 23:08:51,432 - INFO - Request completed. Total time: 3.04s, Avg time/q: 1.01s
+2025-08-06 23:08:56,230 - INFO - Cache MISS for document hash: d405ba74a0024a41cc934c35a2694e47e6319f93b7dd1198047fc375475e76cd
+2025-08-06 23:08:56,231 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/image.png?sv=2023-01-03&spr=https&st=2025-08-04T19%3A21%3A45Z&se=2026-08-05T19%3A21%3A00Z&sr=b&sp=r&sig=lAn5WYGN%2BUAH7mBtlwGG4REw5EwYfsBtPrPuB0b18M4%3D
+2025-08-06 23:08:56,650 - INFO - Extracting text from 'd405ba74a0024a41cc934c35a2694e47e6319f93b7dd1198047fc375475e76cd.tmp' with extension: .png
+2025-08-06 23:08:56,650 - WARNING - Unsupported file type '.png' found in ZIP. Skipping.
+2025-08-06 23:08:56,650 - WARNING - Document is empty or no supported files found after extraction.
+2025-08-06 23:08:56,653 - ERROR - An unexpected error occurred during request processing: 500: RAG system could not be initialized for the document.
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 425, in run_submission
+    raise HTTPException(status_code=500, detail="RAG system could not be initialized for the document.")
+fastapi.exceptions.HTTPException: 500: RAG system could not be initialized for the document.
+2025-08-06 23:08:57,788 - INFO - Cache MISS for document hash: beb3742ba6c3360986fe0e2f594ec95f6c499301db4940efe6d3d3ef7d370e15
+2025-08-06 23:08:57,789 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/image.jpeg?sv=2023-01-03&spr=https&st=2025-08-04T19%3A29%3A01Z&se=2026-08-05T19%3A29%3A00Z&sr=b&sp=r&sig=YnJJThygjCT6%2FpNtY1aHJEZ%2F%2BqHoEB59TRGPSxJJBwo%3D
+2025-08-06 23:08:58,060 - INFO - Extracting text from 'beb3742ba6c3360986fe0e2f594ec95f6c499301db4940efe6d3d3ef7d370e15.tmp' with extension: .jpeg
+2025-08-06 23:08:58,060 - WARNING - Unsupported file type '.jpeg' found in ZIP. Skipping.
+2025-08-06 23:08:58,061 - WARNING - Document is empty or no supported files found after extraction.
+2025-08-06 23:08:58,062 - ERROR - An unexpected error occurred during request processing: 500: RAG system could not be initialized for the document.
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 425, in run_submission
+    raise HTTPException(status_code=500, detail="RAG system could not be initialized for the document.")
+fastapi.exceptions.HTTPException: 500: RAG system could not be initialized for the document.
+2025-08-06 23:08:59,126 - INFO - Cache MISS for document hash: 3f83c4cd7585e66999d4aaefcf11ebdfff7c79f4e8257cf5ba95b9956426bed9
+2025-08-06 23:08:59,128 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/hackrx_pdf.zip?sv=2023-01-03&spr=https&st=2025-08-04T09%3A25%3A45Z&se=2027-08-05T09%3A25%3A00Z&sr=b&sp=r&sig=rDL2ZcGX6XoDga5%2FTwMGBO9MgLOhZS8PUjvtga2cfVk%3D
+2025-08-06 23:08:59,421 - INFO - Detected ZIP archive. Extracting and processing all files...
+2025-08-06 23:08:59,435 - INFO - Extracting text from '0.zip' with extension: .zip
+2025-08-06 23:08:59,436 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,436 - INFO - Extracting text from '1.zip' with extension: .zip
+2025-08-06 23:08:59,436 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,437 - INFO - Extracting text from '10.zip' with extension: .zip
+2025-08-06 23:08:59,437 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,437 - INFO - Extracting text from '11.zip' with extension: .zip
+2025-08-06 23:08:59,437 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,437 - INFO - Extracting text from '12.zip' with extension: .zip
+2025-08-06 23:08:59,437 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,437 - INFO - Extracting text from '13.zip' with extension: .zip
+2025-08-06 23:08:59,437 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,438 - INFO - Extracting text from '14.zip' with extension: .zip
+2025-08-06 23:08:59,438 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,438 - INFO - Extracting text from '15.zip' with extension: .zip
+2025-08-06 23:08:59,438 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,438 - INFO - Extracting text from '2.zip' with extension: .zip
+2025-08-06 23:08:59,438 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,439 - INFO - Extracting text from '3.zip' with extension: .zip
+2025-08-06 23:08:59,439 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,439 - INFO - Extracting text from '4.zip' with extension: .zip
+2025-08-06 23:08:59,439 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,439 - INFO - Extracting text from '5.zip' with extension: .zip
+2025-08-06 23:08:59,440 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,440 - INFO - Extracting text from '6.zip' with extension: .zip
+2025-08-06 23:08:59,440 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,441 - INFO - Extracting text from '7.zip' with extension: .zip
+2025-08-06 23:08:59,441 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,441 - INFO - Extracting text from '8.zip' with extension: .zip
+2025-08-06 23:08:59,441 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,442 - INFO - Extracting text from '9.zip' with extension: .zip
+2025-08-06 23:08:59,442 - WARNING - Unsupported file type '.zip' found in ZIP. Skipping.
+2025-08-06 23:08:59,442 - WARNING - Document is empty or no supported files found after extraction.
+2025-08-06 23:08:59,449 - ERROR - An unexpected error occurred during request processing: 500: RAG system could not be initialized for the document.
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 425, in run_submission
+    raise HTTPException(status_code=500, detail="RAG system could not be initialized for the document.")
+fastapi.exceptions.HTTPException: 500: RAG system could not be initialized for the document.
+2025-08-06 23:09:00,669 - INFO - Cache MISS for document hash: b5941944b21ac760d9b0ca9ecadb0fe2e470d3f70f6d5af506fa5fd6f021dbf5
+2025-08-06 23:09:00,670 - INFO - Processing document from URL: https://ash-speed.hetzner.com/10GB.bin
+2025-08-06 23:09:01,628 - ERROR - An unexpected error occurred during request processing: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 423, in run_submission
+    rag_system = await get_or_create_enhanced_rag_system(doc_url=payload.documents)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 345, in get_or_create_enhanced_rag_system
+    doc_response = requests.get(doc_url, timeout=120)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\gpu_env\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 23:09:02,950 - INFO - Cache MISS for document hash: 61e38dd943de8eab6f352d9097e668b22393c96e0950b2ea9d9ad0a034f3a114
+2025-08-06 23:09:02,952 - INFO - Processing document from URL: https://hackrx.blob.core.windows.net/assets/Test%20/Fact%20Check.docx?sv=2023-01-03&spr=https&st=2025-08-04T20%3A27%3A22Z&se=2028-08-05T20%3A27%3A00Z&sr=b&sp=r&sig=XB1%2FNzJ57eg52j4xcZPGMlFrp3HYErCW1t7k1fMyiIc%3D
+2025-08-06 23:09:03,174 - INFO - Extracting text from '61e38dd943de8eab6f352d9097e668b22393c96e0950b2ea9d9ad0a034f3a114.tmp' with extension: .docx
+2025-08-06 23:09:03,189 - INFO - Created 2 document chunks from all processed files.
+2025-08-06 23:09:03,189 - INFO - Setting up indexes for 2 document chunks...
+2025-08-06 23:09:03,194 - INFO - Creating new Qdrant collection: 'doc_61e38dd943de' with vector size 1024
+2025-08-06 23:09:03,304 - INFO - Creating embeddings...
+2025-08-06 23:09:03,365 - INFO - Indexed 2 vectors in Qdrant collection: doc_61e38dd943de
+2025-08-06 23:09:03,365 - INFO - Building BM25 index...
+2025-08-06 23:09:03,365 - INFO - BM25 indexing complete.
+2025-08-06 23:09:03,366 - INFO - Document processing completed in 0.19 seconds.
+2025-08-06 23:09:03,367 - INFO - Document 61e38dd943de8eab6f352d9097e668b22393c96e0950b2ea9d9ad0a034f3a114 processed and cached successfully.
+2025-08-06 23:09:03,369 - INFO - Processing 7 questions in parallel...
+2025-08-06 23:09:03,423 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,423 - ERROR - Error answering question 'What is the capital of Australia?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,469 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,469 - ERROR - Error answering question 'Where can we find Dinosaurs?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,531 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,532 - ERROR - Error answering question 'What are clouds made of?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,578 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,579 - ERROR - Error answering question 'How to grow plants faster?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,640 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,641 - ERROR - Error answering question 'How many lungs does human body have?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,679 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,679 - ERROR - Error answering question 'Who is Sanjeev bajaj?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,726 - INFO - Re-ranking 2 documents with ColBERT...
+2025-08-06 23:09:03,727 - ERROR - Error answering question 'What is the name of our galaxy?...': 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\HackRx-version2\main.py", line 215, in _get_single_answer
+    reranked_docs = self.rerank_with_colbert(question, retrieved_docs_with_metadata, top_k=7)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HackRx-version2\main.py", line 210, in rerank_with_colbert
+    return [doc['content'] for doc in reranked_docs]
+                                      ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-06 23:09:03,728 - INFO - All questions processed.
+2025-08-06 23:09:03,728 - INFO - Request completed. Total time: 0.78s, Avg time/q: 0.11s
